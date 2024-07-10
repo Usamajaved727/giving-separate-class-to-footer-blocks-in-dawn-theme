@@ -1,0 +1,21 @@
+      <script>
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Select the specific div element based on class names and data attribute
+    const targetDiv = document.querySelector('.footer-block.grid__item.scroll-trigger.animate--slide-in[data-cascade=""][style*="--animation-order: 5;"]');
+    const targetDiv1 = document.querySelector('.footer-block.grid__item.footer-block--menu.scroll-trigger.animate--slide-in[data-cascade=""][style*="--animation-order: 1;"]');
+    const targetDiv2 = document.querySelector('.footer-block.grid__item.footer-block--menu.scroll-trigger.animate--slide-in[data-cascade=""][style*="--animation-order: 2;"]');
+    const targetDiv3 = document.querySelector('.footer-block.grid__item.footer-block--menu.scroll-trigger.animate--slide-in[data-cascade=""][style*="--animation-order: 3;"]');
+    const targetDiv4 = document.querySelector('.footer-block.grid__item.footer-block--menu.scroll-trigger.animate--slide-in[data-cascade=""][style*="--animation-order: 4;"]');
+
+      targetDiv1.classList.add('custom-target-1');
+      targetDiv2.classList.add('custom-target-2');
+      targetDiv3.classList.add('custom-target-3');
+      targetDiv4.classList.add('custom-target-4');
+      targetDiv.classList.add('custom-target');
+    targetDiv.style.maxWidth = '331px';
+    targetDiv.style.marginLeft = '100px';
+ 
+  }, 1000); // Delay of 1 second (1000 milliseconds)
+});
+  </script>
